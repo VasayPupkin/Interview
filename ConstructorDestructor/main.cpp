@@ -59,7 +59,12 @@ I am being constructed.
 I am being moved.
 
 если есть только конструктор копирования
+emplace_back:
+I am being constructed.
 
+push_back:
+I am being constructed.
+I am being copied.
 */
 
 #include <vector>
