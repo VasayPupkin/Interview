@@ -114,6 +114,7 @@ int main()
         std::cout << president.name << " was re-elected president of "
                   << president.country << " in " << president.year << ".\n";
     }
+
 }
 
 

@@ -11,6 +11,9 @@ public:
     virtual void printData() {
         cout << "From Base class "<< data << endl;
     }
+    void printMsg() {
+        cout << "printMsg from Base" << endl;
+    }
 
     int data = 10;
 };
@@ -25,6 +28,9 @@ public:
     virtual void printData() override {
         cout << "From Derived class "<< data << endl;
     }
+    void printMsg() {
+        cout << "printMsg from Derived" << endl;
+    }
 };
 
 void printByObject(B obj) {
@@ -37,6 +43,7 @@ int main()
     D derived;
     B *base = &derived;
     printByObject(*base);
+    base->printMsg();
     cout << "Hello World!" << endl;
     return 0;
 }
